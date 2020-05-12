@@ -1,0 +1,52 @@
+:root {
+    --user-card-height: 150px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: grey;
+
+}
+
+.userCard {
+
+
+    max-width: 400px;
+    width: 100%;
+    min-width: 265px;
+    height: var(--user-card-height);
+    background: white;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 10px 20px;
+}
+
+.userImageContainer {
+    width: var(--user-card-height);
+    height: var(--user-card-height);
+    overflow: hidden;
+}
+
+.userImageContainer > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.userInfoContainer {
+    padding: 20px;
+    height: var(--user-card-height);
+}
+
+.userStateItem {
+    display: inline-block;
+}
+
+.userCard > * {
+    display: inline-block;
+    vertical-align: top;
+}
